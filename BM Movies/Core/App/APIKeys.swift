@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum APIKeys {
+    
+    static let baseUrl = "https://api.themoviedb.org/3/movie/"
+}
+
+

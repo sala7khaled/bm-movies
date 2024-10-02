@@ -6,17 +6,23 @@
 //
 
 import UIKit
+import SystemConfiguration
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    var reachabilityManager = ReachabilityManager()
+    var reachabilityBanner = ReachabilityBanner()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        reachabilityManager.start(listener: self)
+        
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.tintColor = .appPrimary
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
         
@@ -37,3 +43,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+// MARK: - Extensions
+extension SceneDelegate: ReachabilityManagerListener {
+    
+    func notifyChange(with flags: SCNetworkReachabilityFlags) {
+        reachabilityBanner.notifyStatusBar(in: window, for: flags)
+    }
+}

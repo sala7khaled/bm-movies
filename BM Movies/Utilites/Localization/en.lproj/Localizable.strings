@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  BM Movies
+
+  Created by Salah Khaled on 02/10/2024.
+  
+*/
+
+
+// MARK: - MAIN
+"app_name" = "BM Movies";
+"ok" = "Ok";
+"cancel" = "Cancel";
+"continue" = "Continue";
+"get_started" = "Get started";
+
+
+// MARK: - RESPONSE
+"no_internet_connection" = "No internet connection!";
+"something_went_worng" = "Something went worng!";
+"server_error" = "Server error!";
+"no_response_found" = "No response found!";
+"parsing_error" = "Parsing error!";
+"session_expired" = "Session expired!";
+
+
+// MARK: - HOME
+"now_playing" = "Now Playing";
+"popular_movies" = "Popular Movies";
+"upcoming_movies" = "Upcoming Movies";
