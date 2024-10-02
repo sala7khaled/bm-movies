@@ -14,9 +14,9 @@ public class AppTabBar: UITabBar {
     
     private var shapeLayer: CALayer?
     
-//    public override func draw(_ rect: CGRect) {
-//        self.addShape()
-//    }
+    public override func draw(_ rect: CGRect) {
+        self.addShape()
+    }
     
     private func addShape() {
         let shapeLayer = CAShapeLayer()
@@ -32,6 +32,7 @@ public class AppTabBar: UITabBar {
         self.shapeLayer = shapeLayer
     }
     
+    // MARK: - Draw custom shape
     private func drawPath() -> CGPath {
         let path = UIBezierPath()
         

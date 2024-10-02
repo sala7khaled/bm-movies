@@ -59,7 +59,7 @@ public class AppTabBarController: UITabBarController {
     /// Edit for customization
     let barStyle: UIBarStyle = .black
     let barHeight: CGFloat = 74
-    let selectedColor: UIColor = .appWhite
+    let selectedColor: UIColor = .appBarSelect
     let unselectedColor: UIColor = .appSubText
 
     let selectedFont: UIFont = .systemFont(ofSize: 14, weight: .medium)
@@ -138,8 +138,8 @@ public class AppTabBarController: UITabBarController {
         
         let item = UITabBarItem(title: title, image: image, tag: tag)
 
-        item.imageInsets = UIEdgeInsets(top: 2, left: 0, bottom: -2, right: 0)
-        item.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -10.0)
+        item.imageInsets = UIEdgeInsets.zero
+        item.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 4)
 
         item.selectedImage = selectedImage
 
