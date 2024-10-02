@@ -19,18 +19,18 @@ open class Console {
         log("\n📥 Response", response)
         switch statusCode {
         case 200...299:
-            log("\n🏁 State: \(url.replacingOccurrences(of: APIKeys.baseUrl, with: ""))", "✅ Success")
+            log("\n🏁 State: \(url.replacingOccurrences(of: API.baseUrl, with: ""))", "✅ Success")
             break
         default:
-            log("\n🚩 State: \(url.replacingOccurrences(of: APIKeys.baseUrl, with: ""))", "❌ Error: \(String(describing: error)) ⏹")
+            log("\n🚩 State: \(url.replacingOccurrences(of: API.baseUrl, with: ""))", "❌ Error: \(String(describing: error)) ⏹")
             break
         }
         log("\n--------------------- API Calling End", "---------------------\n")
     }
 
-//    static func logError(_ type: APIErrorType) {
-//        Console.log("❌ Error", "\(type)")
-//    }
+    static func logError(_ type: APIErrorType) {
+        Console.log("❌ Error", "\(type)")
+    }
     
     static func log(_ tag: String, _ text: Any) {
         #if DEBUG
