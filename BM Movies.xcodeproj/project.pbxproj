@@ -14,7 +14,7 @@
 		AD0301682CADA608000DCC80 /* Exceptions for "BM Movies" folder in "BM Movies" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = AD0301552CADA607000DCC80 /* BM Movies */;
 		};
@@ -146,7 +146,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BM Movies/Info.plist";
+				INFOPLIST_FILE = "BM Movies/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "BM Movies";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -179,7 +179,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BM Movies/Info.plist";
+				INFOPLIST_FILE = "BM Movies/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "BM Movies";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
