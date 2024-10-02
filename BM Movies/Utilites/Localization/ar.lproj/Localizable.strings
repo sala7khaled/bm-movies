@@ -23,6 +23,6 @@
 "session_expired" = "انتهت الجلسة!";
 
 // MARK: - HOME
-"now_playing" = "يعرض الآن";
-"popular_movies" = "أفلام شائعة";
-"upcoming_movies" = "أفلام قادمة";
+"nowPlaying" = "يعرض الآن";
+"popular" = "أفلام شائعة";
+"upcoming" = "أفلام قادمة";

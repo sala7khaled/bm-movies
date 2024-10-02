@@ -25,6 +25,6 @@
 
 
 // MARK: - HOME
-"now_playing" = "Now Playing";
-"popular_movies" = "Popular Movies";
-"upcoming_movies" = "Upcoming Movies";
+"nowPlaying" = "Now Playing";
+"popular" = "Popular Movies";
+"upcoming" = "Upcoming Movies";
