@@ -16,10 +16,10 @@ class AppNavController: UINavigationController {
     
     private func configure() {
         
-        navigationBar.tintColor = .appWhite
-        navigationBar.barTintColor = .appWhite
+        navigationBar.tintColor = .appBlack
+        navigationBar.barTintColor = .appBlack
         
-        let font = UIFont.boldSystemFont(ofSize: 24)
+        let font = UIFont.boldSystemFont(ofSize: 18)
         let largeFont = UIFont.boldSystemFont(ofSize: 38)
         
         navigationBar.titleTextAttributes = [

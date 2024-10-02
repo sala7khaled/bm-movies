@@ -10,6 +10,7 @@ import UIKit
 class HomeController: BaseController {
 
     // MARK: - Outlets
+    @IBOutlet weak var movieTableView: UITableView!
     
     // MARK: - Properties
     let viewModel = HomeViewModel()
@@ -29,6 +30,7 @@ class HomeController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupTableView()
         setupViewModel()
     }
     
@@ -43,7 +45,7 @@ class HomeController: BaseController {
         
         viewModel.didSuccessMoviesClosure = { [weak self] in
             guard let self else { return }
-            print(viewModel.getMovieAt(index: 1).id)
+            self.movieTableView.reloadData()
         }
     }
     
