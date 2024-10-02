@@ -1,9 +1,8 @@
 //
 //  RootRouter.swift
-//  Bosta Gallery
+//  BM Movies
 //
-//  Created by Salah Khaled on 02/02/2023.
-//  Copyright © 2023 Salah Khaled. All rights reserved.
+//  Created by Salah Khaled on 02/10/2024.
 //
 
 import UIKit
@@ -15,7 +14,7 @@ class RootRouter {
     }
     
     static func presentRootNav(with vc: UIViewController) {
-        let nav = NavController(rootViewController: vc)
+        let nav = AppNavController(rootViewController: vc)
         presentRoot(nav)
     }
     
@@ -41,7 +40,7 @@ class RootRouter {
     
     static func createNavController(vc: UIViewController, title: String, image: UIImage) -> UINavigationController {
         vc.navigationItem.title = title
-        let nav = NavController(rootViewController: vc)
+        let nav = AppNavController(rootViewController: vc)
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
         return nav

@@ -1,14 +1,13 @@
 //
-//  NavController.swift
-//  Bosta Gallery
+//  AppNavController.swift
+//  BM Movies
 //
-//  Created by Salah Khaled on 02/02/2023.
-//  Copyright © 2023 Salah Khaled. All rights reserved.
+//  Created by Salah Khaled on 02/10/2024.
 //
 
 import UIKit
 
-class NavController: UINavigationController {
+class AppNavController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,19 +16,19 @@ class NavController: UINavigationController {
     
     private func configure() {
         
-        navigationBar.tintColor = .appBlack
+        navigationBar.tintColor = .appWhite
         navigationBar.barTintColor = .appWhite
         
         let font = UIFont.boldSystemFont(ofSize: 24)
         let largeFont = UIFont.boldSystemFont(ofSize: 38)
         
         navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.foregroundColor: UIColor.appWhite,
             NSAttributedString.Key.font: font
         ]
         
         navigationBar.largeTitleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.foregroundColor: UIColor.appWhite,
             NSAttributedString.Key.font: largeFont
         ]
         

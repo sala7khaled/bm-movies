@@ -11,7 +11,7 @@ import UIKit
 // MARK: - Enum Tab
 extension AppTabBarController {
     
-    enum Tab: Int, CaseIterable {
+    enum HomeTab: Int, CaseIterable {
         case nowPlaying = 0, popular, upcoming
         
         var title: String {
@@ -68,7 +68,7 @@ public class AppTabBarController: UITabBarController {
     private var tabBarItems: [UIViewController] {
         var items: [UIViewController] = []
         
-        Tab.allCases.forEach { tab in
+        HomeTab.allCases.forEach { tab in
             let tabBarItem =
             self.tabBarItem(for: RootRouter.createNavController(vc: tab.viewController,
                                                                 title: tab.title,

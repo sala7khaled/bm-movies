@@ -7,12 +7,26 @@
 
 import UIKit
 
-class HomeController: UIViewController {
+class HomeController: BaseController {
 
+    // MARK: - Outlets
+    
+    // MARK: - Properties
+    let tab: HomeTab
+    
+    // MARK: - Init
+    init(tab: HomeTab) {
+        self.viewModel = viewModel
+        super.init(nibName: "AddorEditContactVC", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
 

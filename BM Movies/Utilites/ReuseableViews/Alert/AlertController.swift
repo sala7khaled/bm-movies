@@ -1,9 +1,8 @@
 //
 //  AlertController.swift
-//  Bosta Gallery
+//  BM Movies
 //
-//  Created by Salah Khaled on 02/02/2023.
-//  Copyright © 2023 Salah Khaled. All rights reserved.
+//  Created by Salah Khaled on 02/10/2024.
 //
 
 import UIKit
