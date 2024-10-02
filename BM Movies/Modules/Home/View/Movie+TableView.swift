@@ -10,7 +10,7 @@ import UIKit
 extension HomeController: UITableViewDelegateAndDataSource {
     
     func setupTableView() {
-        movieTableView.initialize(cellClass: MovieCell.self, delegate: self, dataSource: self, edgeInsets: UIEdgeInsets(top: 24, left: 0, bottom: 40, right: 0))
+        movieTableView.initialize(cellClass: MovieCell.self, delegate: self, dataSource: self, estimatedRowHeight: 180, edgeInsets: UIEdgeInsets(top: 24, left: 0, bottom: 40, right: 0))
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,7 +25,7 @@ extension HomeController: UITableViewDelegateAndDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 180
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

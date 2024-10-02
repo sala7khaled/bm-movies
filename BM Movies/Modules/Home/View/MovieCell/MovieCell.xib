@@ -14,19 +14,18 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="181" id="KGk-i7-Jjw" customClass="MovieCell" customModule="BM_Movies" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="480" height="181"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="181"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-Mz-jSk">
-                        <rect key="frame" x="0.0" y="0.0" width="135" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="181"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="X1s-Mz-jSk" secondAttribute="height" multiplier="1.5:2" id="AqF-Rk-bhZ"/>
-                            <constraint firstAttribute="height" constant="180" id="M3b-Iy-AId"/>
+                            <constraint firstAttribute="width" constant="140" id="dpI-Af-uuO"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l68-P2-YZT">
-                        <rect key="frame" x="155" y="9" width="315" height="162"/>
+                        <rect key="frame" x="160" y="9" width="310" height="163"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P34-3D-ooY">
                                 <rect key="frame" x="0.0" y="0.0" width="24" height="53.333333333333336"/>
@@ -70,10 +69,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8xp-NV-45R">
-                                <rect key="frame" x="0.0" y="144" width="38" height="18"/>
+                                <rect key="frame" x="0.0" y="145" width="38" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qY-yW-xWC">
-                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="4" height="17"/>
+                                        <rect key="frame" x="0.0" y="0.33333333333334281" width="4" height="17"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                         <color key="textColor" name="appMainText"/>
                                         <nil key="highlightedColor"/>
@@ -87,7 +86,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQn-xW-tQI">
-                                        <rect key="frame" x="34" y="0.66666666666665719" width="4" height="17"/>
+                                        <rect key="frame" x="34" y="0.33333333333334281" width="4" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="appSubText"/>
                                         <nil key="highlightedColor"/>
