@@ -48,9 +48,14 @@ class MovieController: BaseController {
         super.viewDidLoad()
         
         setupUI()
-        setupNavigation()
         setupCollectionView()
         setupViewModel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     // MARK: - Methods
@@ -63,10 +68,6 @@ class MovieController: BaseController {
         storylineTitle.text = "storyline".l()
         votingTitle.text = "voting".l()
         genresLabel.text = "genres".l()
-    }
-    
-    func setupNavigation() {
-        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func setupViewModel() {

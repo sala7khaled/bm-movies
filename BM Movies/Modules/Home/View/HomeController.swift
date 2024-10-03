@@ -33,6 +33,12 @@ class HomeController: BaseController {
         setupViewModel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     // MARK: - Methods
     func setupViewModel() {
         viewModel.getMoviesAPI()
