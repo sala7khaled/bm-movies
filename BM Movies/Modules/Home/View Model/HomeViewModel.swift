@@ -54,11 +54,11 @@ class HomeViewModel {
         
         switch homeType {
         case .nowPlaying:
-            MovieRepo.shared.getNowPlaying(language: langCode, page: page, completionHandler)
+            HomeRepo.shared.getNowPlaying(language: langCode, page: page, completionHandler)
         case .popular:
-            MovieRepo.shared.getPopular(language: langCode, page: page, completionHandler)
+            HomeRepo.shared.getPopular(language: langCode, page: page, completionHandler)
         case .upcoming:
-            MovieRepo.shared.getUpcoming(language: langCode, page: page, completionHandler)
+            HomeRepo.shared.getUpcoming(language: langCode, page: page, completionHandler)
         }
     }
 

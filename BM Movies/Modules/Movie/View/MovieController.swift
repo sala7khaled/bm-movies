@@ -78,7 +78,7 @@ class MovieController: BaseController {
         viewModel.didFailedDetailClosure = { [weak self] errorMessage in
             guard let self else { return }
             self.loading?.close()
-            showError(message: errorMessage)
+            showExitAlert(message: errorMessage)
         }
         
         viewModel.didSuccessDetailClosure = { [weak self] in
@@ -91,9 +91,7 @@ class MovieController: BaseController {
     
     func setupMovieDetail() {
         guard let movie = viewModel.getMovieDetail() else {
-            AlertController.shared.show(in: self, message: "Movie details not found!" ) { action in
-                self.navigationController?.popViewController(animated: true)
-            }
+            showExitAlert(message: "no_response_found".l())
             return
         }
         
@@ -122,6 +120,12 @@ class MovieController: BaseController {
         
         genreCollectionView.reloadData()
         
+    }
+    
+    func showExitAlert(message: String) {
+        AlertController.shared.show(in: self, message: message) { action in
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     // MARK: - Actions

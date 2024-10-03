@@ -8,8 +8,7 @@
 import Foundation
 
 /// The generic response for current API
-
-struct APIData<T: Decodable>: Decodable {
+public struct APIData<T: Decodable>: Decodable {
     
     var page: Int?
     var totalPages: Int?

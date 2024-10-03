@@ -1,5 +1,5 @@
 //
-//  UsersRepo.swift
+//  HomeRepo.swift
 //  BM Movies
 //
 //  Created by Salah Khaled on 02/10/2024.
@@ -7,12 +7,20 @@
 
 import UIKit
 
-class MovieRepo: Repo {
+// MARK: - Protocol
+public protocol HomeRepoInterface {
+    func getNowPlaying(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ())
+    func getPopular(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ())
+    func getUpcoming(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ())
+}
+
+// MARK: - Repo
+public class HomeRepo: Repo, HomeRepoInterface {
     
-    static let shared = MovieRepo()
+    static let shared = HomeRepo()
     
     // MARK: - Network
-    func getNowPlaying(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
+    public func getNowPlaying(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
         provider.request(type: APIData<[MovieModel]>.self, service: Api.MovieService.getNowPlaying(language: language, page: page)) { response in
             switch (response) {
             case let .onSuccess(response):
@@ -23,7 +31,7 @@ class MovieRepo: Repo {
         }
     }
     
-    func getPopular(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
+    public func getPopular(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
         provider.request(type: APIData<[MovieModel]>.self, service: Api.MovieService.getPopular(language: language, page: page)) { response in
             switch (response) {
             case let .onSuccess(response):
@@ -34,7 +42,7 @@ class MovieRepo: Repo {
         }
     }
     
-    func getUpcoming(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
+    public func getUpcoming(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
         provider.request(type: APIData<[MovieModel]>.self, service: Api.MovieService.getUpcoming(language: language, page: page)) { response in
             switch (response) {
             case let .onSuccess(response):
@@ -44,5 +52,4 @@ class MovieRepo: Repo {
             }
         }
     }
-
 }

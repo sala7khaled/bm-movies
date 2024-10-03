@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Repo {
+public class Repo {
     
     let provider = URLSessionProvider()
 }

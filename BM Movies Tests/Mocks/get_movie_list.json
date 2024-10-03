@@ -1,0 +1,408 @@
+{
+    "dates": {
+        "maximum": "2024-10-09",
+        "minimum": "2024-08-28"
+    },
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/Asg2UUwipAdE87MxtJy7SQo08XI.jpg",
+            "genre_ids": [
+                28,
+                14,
+                27,
+                53,
+                80
+            ],
+            "id": 957452,
+            "original_language": "en",
+            "original_title": "The Crow",
+            "overview": "Soulmates Eric and Shelly are brutally murdered when the demons of her dark past catch up with them. Given the chance to save his true love by sacrificing himself, Eric sets out to seek merciless revenge on their killers, traversing the worlds of the living and the dead to put the wrong things right.",
+            "popularity": 1403.514,
+            "poster_path": "/58QT4cPJ2u2TqWZkterDq9q4yxQ.jpg",
+            "release_date": "2024-08-21",
+            "title": "The Crow",
+            "video": false,
+            "vote_average": 5.4,
+            "vote_count": 459
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wh1IhMWkW7u5c5bkzSGFylF9G8r.jpg",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 1215162,
+            "original_language": "en",
+            "original_title": "Kill 'em All 2",
+            "overview": "Phillip and Suzanne are retired from the spy game, living peacefully off the grid. That's until their whereabouts are discovered by Vlad, the vengeful brother of their target from the first film.",
+            "popularity": 1201.354,
+            "poster_path": "/hgA5hN3NjNNSTXYOmAI6KNKOzbp.jpg",
+            "release_date": "2024-09-24",
+            "title": "Kill 'em All 2",
+            "video": false,
+            "vote_average": 7.186,
+            "vote_count": 51
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7h6TqPB3ESmjuVbxCxAeB1c9OB1.jpg",
+            "genre_ids": [
+                878,
+                27
+            ],
+            "id": 933260,
+            "original_language": "en",
+            "original_title": "The Substance",
+            "overview": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
+            "popularity": 1131.94,
+            "poster_path": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+            "release_date": "2024-09-07",
+            "title": "The Substance",
+            "video": false,
+            "vote_average": 7.269,
+            "vote_count": 195
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zAqBIeO71BFL7bAtP5TFzVjVamy.jpg",
+            "genre_ids": [
+                10749,
+                18
+            ],
+            "id": 1079091,
+            "original_language": "en",
+            "original_title": "It Ends with Us",
+            "overview": "When a woman's first love suddenly reenters her life, her relationship with a charming, but abusive neurosurgeon is upended, and she realizes she must learn to rely on her own strength to make an impossible choice for her future.",
+            "popularity": 1014.814,
+            "poster_path": "/cSMdFWmajaX4oUMLx7HEDI84GkP.jpg",
+            "release_date": "2024-08-07",
+            "title": "It Ends with Us",
+            "video": false,
+            "vote_average": 6.92,
+            "vote_count": 615
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/A1dZ6faTjg0e6HYftBmEKujuXGQ.jpg",
+            "genre_ids": [
+                35,
+                14,
+                27
+            ],
+            "id": 917496,
+            "original_language": "en",
+            "original_title": "Beetlejuice Beetlejuice",
+            "overview": "After a family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Betelgeuse, Lydia's life is turned upside down when her teenage daughter, Astrid, accidentally opens the portal to the Afterlife.",
+            "popularity": 861.066,
+            "poster_path": "/kKgQzkUCnQmeTPkyIwHly2t6ZFI.jpg",
+            "release_date": "2024-09-04",
+            "title": "Beetlejuice Beetlejuice",
+            "video": false,
+            "vote_average": 7.156,
+            "vote_count": 764
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/reNf6GBzOe48l9WEnFOxXgW56Vg.jpg",
+            "genre_ids": [
+                18,
+                80,
+                53
+            ],
+            "id": 889737,
+            "original_language": "en",
+            "original_title": "Joker: Folie à Deux",
+            "overview": "While struggling with his dual identity, Arthur Fleck not only stumbles upon true love, but also finds the music that's always been inside him.",
+            "popularity": 850.848,
+            "poster_path": "/if8QiqCI7WAGImKcJCfzp6VTyKA.jpg",
+            "release_date": "2024-10-01",
+            "title": "Joker: Folie à Deux",
+            "video": false,
+            "vote_average": 6.47,
+            "vote_count": 82
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/qN7xSoT1iQiaR2i2EpPQedbBFvo.jpg",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "id": 1114513,
+            "original_language": "en",
+            "original_title": "Speak No Evil",
+            "overview": "When an American family is invited to spend the weekend at the idyllic country estate of a charming British family they befriended on vacation, what begins as a dream holiday soon warps into a snarled psychological nightmare.",
+            "popularity": 824.074,
+            "poster_path": "/dA4N6uWOnEMgbxXwFX7qX7adzs8.jpg",
+            "release_date": "2024-09-11",
+            "title": "Speak No Evil",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 302
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/4zlOPT9CrtIX05bBIkYxNZsm5zN.jpg",
+            "genre_ids": [
+                16,
+                878,
+                10751
+            ],
+            "id": 1184918,
+            "original_language": "en",
+            "original_title": "The Wild Robot",
+            "overview": "After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
+            "popularity": 818.04,
+            "poster_path": "/hn4fOpFlbak5ruxkdrmdijs38Yl.jpg",
+            "release_date": "2024-09-12",
+            "title": "The Wild Robot",
+            "video": false,
+            "vote_average": 7.8,
+            "vote_count": 83
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1pbV8uC6EUYOYnPqWfrQFPdAj1O.jpg",
+            "genre_ids": [
+                80,
+                28,
+                53
+            ],
+            "id": 1147710,
+            "original_language": "ko",
+            "original_title": "하이재킹",
+            "overview": "Pilots Tae-in and Gyu-sik are set to fly to Gimpo. Under the guidance of flight attendant Ok-soon, passengers are busy boarding. However, shortly after takeoff, a homemade bomb explodes, turning the cabin into chaos.",
+            "popularity": 795.105,
+            "poster_path": "/68jNkFi61MQjrJEqj2up5wZ4w5R.jpg",
+            "release_date": "2024-06-21",
+            "title": "Hijack 1971",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 37
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mKOBdgaEFguADkJhfFslY7TYxIh.jpg",
+            "genre_ids": [
+                28,
+                878,
+                35
+            ],
+            "id": 365177,
+            "original_language": "en",
+            "original_title": "Borderlands",
+            "overview": "Returning to her home planet, an infamous bounty hunter forms an unexpected alliance with a team of unlikely heroes. Together, they battle monsters and dangerous bandits to protect a young girl who holds the key to unimaginable power.",
+            "popularity": 761.349,
+            "poster_path": "/865DntZzOdX6rLMd405R0nFkLmL.jpg",
+            "release_date": "2024-08-07",
+            "title": "Borderlands",
+            "video": false,
+            "vote_average": 5.876,
+            "vote_count": 630
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/blqiNjJefmY10Wx6y2vgJJWljJj.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 949484,
+            "original_language": "en",
+            "original_title": "Hounds of War",
+            "overview": "After a mission goes wrong, only one of a group of mercenaries is left alive to avenge his fallen brothers.",
+            "popularity": 726.152,
+            "poster_path": "/lRBT73EWsiQPuqK3YS3BnBW0Zwi.jpg",
+            "release_date": "2024-08-29",
+            "title": "Hounds of War",
+            "video": false,
+            "vote_average": 6.454,
+            "vote_count": 65
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/uXDwP5qPhuRyPpQ7WkLbE6t2z5W.jpg",
+            "genre_ids": [
+                28,
+                35,
+                53
+            ],
+            "id": 877817,
+            "original_language": "en",
+            "original_title": "Wolfs",
+            "overview": "Hired to cover up a high-profile crime, a fixer soon finds his night spiralling out of control when he's forced to work with an unexpected counterpart.",
+            "popularity": 590.936,
+            "poster_path": "/vOX1Zng472PC2KnS0B9nRfM8aaZ.jpg",
+            "release_date": "2024-09-20",
+            "title": "Wolfs",
+            "video": false,
+            "vote_average": 6.614,
+            "vote_count": 250
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tAwfoDyKiYa4KQdUp3DTMrEs4En.jpg",
+            "genre_ids": [
+                16,
+                878,
+                12,
+                10751
+            ],
+            "id": 698687,
+            "original_language": "en",
+            "original_title": "Transformers One",
+            "overview": "The untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but once were friends bonded like brothers who changed the fate of Cybertron forever.",
+            "popularity": 582.958,
+            "poster_path": "/qbkAqmmEIZfrCO8ZQAuIuVMlWoV.jpg",
+            "release_date": "2024-09-11",
+            "title": "Transformers One",
+            "video": false,
+            "vote_average": 7.347,
+            "vote_count": 98
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wSZbtiFIK1fkKZdSRtn2kz2Ttfd.jpg",
+            "genre_ids": [
+                28,
+                35,
+                80
+            ],
+            "id": 1139817,
+            "original_language": "ko",
+            "original_title": "무도실무관",
+            "overview": "A talented martial artist who can't walk past a person in need unites with a probation officer to fight and prevent crime as a martial arts officer.",
+            "popularity": 539.213,
+            "poster_path": "/rEaJSXAlNfdhRpDHiNcJsoUa9qE.jpg",
+            "release_date": "2024-09-10",
+            "title": "Officer Black Belt",
+            "video": false,
+            "vote_average": 7.937,
+            "vote_count": 158
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jfC2xCBD8a5QJNd5yY3q23E8i7U.jpg",
+            "genre_ids": [
+                28,
+                80,
+                18
+            ],
+            "id": 1186947,
+            "original_language": "pt",
+            "original_title": "Bandida - A Número Um",
+            "overview": "At the age of nine, Rebeca is sold by her grandmother to the bookseller who ran Rocinha. Disputed by bicheiros and drug dealers, the community is going through changes in power. Rebeca becomes the wife of the chief drug dealer and, with the death of her partner, his successor. The electrifying trajectory of crime, violence, drugs and love of a female drug kingpin in Rocinha, Rio de Janeiro in the 1980s.",
+            "popularity": 520.146,
+            "poster_path": "/rGS8SzheANVQicNba0GCE6w1XHb.jpg",
+            "release_date": "2024-06-20",
+            "title": "Outlaw",
+            "video": false,
+            "vote_average": 6.482,
+            "vote_count": 55
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/pysPTtYmTcQBlShcxXZwfs3Zp8H.jpg",
+            "genre_ids": [
+                878,
+                53,
+                27
+            ],
+            "id": 1064028,
+            "original_language": "en",
+            "original_title": "Subservience",
+            "overview": "With his wife out sick, a struggling father brings home a lifelike AI, only to have his self-aware new help want everything her new family has to offer... Like the affection of her owner and she'll kill to get it.",
+            "popularity": 477.546,
+            "poster_path": "/gBenxR01Uy0Ev9RTIw6dVBPoyQU.jpg",
+            "release_date": "2024-08-15",
+            "title": "Subservience",
+            "video": false,
+            "vote_average": 6.592,
+            "vote_count": 147
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9SSEUrSqhljBMzRe4aBTh17rUaC.jpg",
+            "genre_ids": [
+                27,
+                878,
+                28
+            ],
+            "id": 945961,
+            "original_language": "en",
+            "original_title": "Alien: Romulus",
+            "overview": "While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life form in the universe.",
+            "popularity": 463.177,
+            "poster_path": "/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
+            "release_date": "2024-08-13",
+            "title": "Alien: Romulus",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 1105
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/sjC29cgm4qZAnpOJQbYKCxDCcra.jpg",
+            "genre_ids": [
+                27,
+                878,
+                53
+            ],
+            "id": 1062215,
+            "original_language": "en",
+            "original_title": "Afraid",
+            "overview": "Curtis Pike and his family are selected to test a new home device: a digital assistant called AIA. AIA observes the family's behaviors and begins to anticipate their needs. And she can – and will – make sure nothing – and no one – gets in her family's way.",
+            "popularity": 445.293,
+            "poster_path": "/gUREuXCnJLVHsvKXDH9fgIcfM6e.jpg",
+            "release_date": "2024-08-28",
+            "title": "Afraid",
+            "video": false,
+            "vote_average": 6.427,
+            "vote_count": 158
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gZWl93sf8AxavYpVT1Un6EF3oCj.jpg",
+            "genre_ids": [
+                80,
+                53,
+                18
+            ],
+            "id": 475557,
+            "original_language": "en",
+            "original_title": "Joker",
+            "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+            "popularity": 380.692,
+            "poster_path": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+            "release_date": "2019-10-01",
+            "title": "Joker",
+            "video": false,
+            "vote_average": 8.2,
+            "vote_count": 25263
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vt37v6ouquokPYeEg3xqkzKjHRj.jpg",
+            "genre_ids": [
+                53
+            ],
+            "id": 1248753,
+            "original_language": "en",
+            "original_title": "Amber Alert",
+            "overview": "An ordinary rideshare becomes a high-stakes game of cat and mouse when Jaq and Shane receive an alert of a child abduction on their phones. Quickly realizing they are behind a car that matches the description of the kidnapper’s, Jaq and Shane desperately race against time to save the child’s life.",
+            "popularity": 379.144,
+            "poster_path": "/vkrmJ2fStfnvsLfBw55nimnjcd5.jpg",
+            "release_date": "2024-09-27",
+            "title": "Amber Alert",
+            "video": false,
+            "vote_average": 5.8,
+            "vote_count": 13
+        }
+    ],
+    "total_pages": 249,
+    "total_results": 4961
+}

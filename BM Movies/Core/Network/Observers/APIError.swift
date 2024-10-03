@@ -5,7 +5,7 @@
 //  Created by Salah Khaled on 02/10/2024.
 //
 
-enum APIErrorType {
+public enum APIErrorType {
 
     case server
     case noData
@@ -15,7 +15,7 @@ enum APIErrorType {
     case known
 }
 
-struct APIError {
+public struct APIError {
     
     var type: APIErrorType
     var code: Int? = 0

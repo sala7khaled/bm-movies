@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SpokenLanguageModel: Codable {
+public class SpokenLanguageModel: Codable {
     
     let englishName: String?
     let iso639_1: String?

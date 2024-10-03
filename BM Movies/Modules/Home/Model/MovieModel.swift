@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MovieModel: Codable {
+public class MovieModel: Codable {
 
     let adult: Bool?
     let backdropPath: String?
@@ -24,7 +24,7 @@ class MovieModel: Codable {
 
 }
 
-extension MovieModel {
+public extension MovieModel {
 
     enum CodingKeys: String, CodingKey {
         

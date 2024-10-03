@@ -7,14 +7,14 @@
 
 import Foundation
 
-class GenreModel: Codable {
+public class GenreModel: Codable {
     
     let id: Int?
     let name: String?
     
 }
 
-extension GenreModel {
+public extension GenreModel {
     
     enum CodingKeys: String, CodingKey {
         

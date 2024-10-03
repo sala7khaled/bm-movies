@@ -13,7 +13,6 @@ class MovieViewModel {
     private var movieId: Int
     private var movieDetailModel: MovieDetailModel?
     
-    
     // MARK: - Life Cycle
     init(movieId: Int) {
         self.movieId = movieId
@@ -30,8 +29,7 @@ class MovieViewModel {
     }
     
     func getMovieDetailAPI() {
-        
-        DetailRepo.shared.getMovieDetail(movieId: movieId) { [weak self] response in
+        MovieRepo.shared.getMovieDetail(movieId: movieId) { [weak self] response in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 switch response {
@@ -44,6 +42,4 @@ class MovieViewModel {
             }
         }
     }
-    
-    
 }
