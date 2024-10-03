@@ -25,7 +25,7 @@ BM Movies is a sleek and user-friendly app that lets you explore and discover th
 
 | Light | Dark | Tint |
 | --- | --- | --- |
-| <img src="/screenshots/light.png" height="200"> | <img src="/screenshots/dark.png" height="200"> | <img src="/screenshots/tinted.png" height="200"> |
+| <img src="/screenshots/light.png" height="180"> | <img src="/screenshots/dark.png" height="180"> | <img src="/screenshots/tinted.png" height="180"> |
 
 <br>
 <br>
