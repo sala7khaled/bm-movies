@@ -13,8 +13,9 @@ BM Movies is a sleek and user-friendly app that lets you explore and discover th
 - [x] MVVM (Model-View-ViewModel) architecture pattern.
 - [x] DDD (Domain-Driven-Design) principles applied.
 - [x] No third-party libraries are used.
+- [x] Network layer caching using `URLRequest.CachePolicy`
+- [x] Handle offline mode
 - [x] Caching mechanisms for images.
-- [ ] Handle offline mode
 - [ ] Include test unit.
 
 <br>
