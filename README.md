@@ -16,7 +16,7 @@ BM Movies is a sleek and user-friendly app that lets you explore and discover th
 - [x] Network layer caching using `URLRequest.CachePolicy`
 - [x] Handle offline mode
 - [x] Caching mechanisms for images.
-- [ ] Include test unit.
+- [x] Include test unit.
 
 <br>
 <br>
