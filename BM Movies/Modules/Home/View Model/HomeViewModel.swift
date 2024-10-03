@@ -22,7 +22,6 @@ class HomeViewModel {
     // MARK: - Closures
     var didFailedMoviesClosure: ((String) -> Void)?
     var didSuccessMoviesClosure: (() -> Void)?
-    var startLoadingClosure: (() -> Void)?
     
     
     // MARK: - Methods
@@ -36,8 +35,6 @@ class HomeViewModel {
     
     // MARK: - API
     func getMoviesAPI() {
-        startLoadingClosure?()
-        
         let completionHandler: (APIResponse<APIData<[MovieModel]>>) -> Void = { [weak self] response in
             guard let self = self else { return }
             DispatchQueue.main.async {

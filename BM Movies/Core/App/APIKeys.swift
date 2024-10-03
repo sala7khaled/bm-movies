@@ -10,9 +10,9 @@ import Foundation
 enum APIKeys {
     
     // MARK: - Base Url
-    static let developmentBaseUrl = "https://api.themoviedb.org/3/movie/"
-    static let stageBaseUrl = "https://api.themoviedb.org/3/movie/"
-    static let productionBaseUrl = "https://api.themoviedb.org/3/movie/"
+    static let developmentBaseUrl = "https://api.themoviedb.org/3/"
+    static let stageBaseUrl = "https://api.themoviedb.org/3/"
+    static let productionBaseUrl = "https://api.themoviedb.org/3/"
     
     // MARK: - Image Url
     static let imageBaseUrl = "https://image.tmdb.org/t/p/w500/"

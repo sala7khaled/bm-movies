@@ -16,7 +16,7 @@ class AppNavController: UINavigationController {
     
     private func configure() {
         
-        navigationBar.tintColor = .appBlack
+        navigationBar.tintColor = .appWhite
         navigationBar.barTintColor = .appBlack
         
         let font = UIFont.boldSystemFont(ofSize: 18)
@@ -31,9 +31,6 @@ class AppNavController: UINavigationController {
             NSAttributedString.Key.foregroundColor: UIColor.appWhite,
             NSAttributedString.Key.font: largeFont
         ]
-        
-//        navigationBar.backIndicatorImage = UIImage(named: Images.back)
-//        navigationBar.backIndicatorTransitionMaskImage = UIImage(named: Images.back)
         
         navigationBar.prefersLargeTitles = true
         navigationBar.layoutIfNeeded()

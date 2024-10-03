@@ -1,22 +1,22 @@
 //
-//  HomeController.swift
+//  MovieController.swift
 //  BM Movies
 //
-//  Created by Salah Khaled on 02/10/2024.
+//  Created by Salah Khaled on 03/10/2024.
 //
 
 import UIKit
 
-class HomeController: BaseController {
+class MovieController: BaseController {
 
     // MARK: - Outlets
-    @IBOutlet weak var movieTableView: UITableView!
+    
     
     // MARK: - Properties
-    let viewModel: HomeViewModel
+    let viewModel: MovieViewModel
     
     // MARK: - Init
-    init(viewModel: HomeViewModel) {
+    init(viewModel: MovieViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -29,29 +29,28 @@ class HomeController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupTableView()
         setupViewModel()
     }
     
     // MARK: - Methods
     func setupViewModel() {
-        viewModel.getMoviesAPI()
+        viewModel.getMovieDetailAPI()
         
         loading?.show()
         
-        viewModel.didFailedMoviesClosure = { [weak self] errorMessage in
+        viewModel.didFailedDetailClosure = { [weak self] errorMessage in
             guard let self else { return }
             self.loading?.close()
             AlertController.shared.show(in: self, message: errorMessage)
         }
         
-        viewModel.didSuccessMoviesClosure = { [weak self] in
+        viewModel.didSuccessDetailClosure = { [weak self] in
             guard let self else { return }
             self.loading?.close()
-            self.movieTableView.reloadData()
+//            self.movieTableView.reloadData()
         }
         
     }
-
-
+    
+    
 }

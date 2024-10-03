@@ -30,6 +30,12 @@ extension HomeController: UITableViewDelegateAndDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        guard let movieId = viewModel.getMovieAt(index: indexPath.row).id else { return }
+        
+        let viewModel = MovieViewModel(movieId: movieId)
+        let vc = MovieController(viewModel: viewModel)
+        
+        RootRouter.pushVC(vc, in: self, animated: true)
     }
     
 }

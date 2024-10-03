@@ -44,9 +44,13 @@ final class Api {
     }
      
     // MARK: - HOME
-    let SERVICE_NOW_PLAYING = "now_playing"
-    let SERVICE_POPULAR = "popular"
-    let SERVICE_UPCOMING = "upcoming"
+    let SERVICE_NOW_PLAYING = "movie/now_playing"
+    let SERVICE_POPULAR = "movie/popular"
+    let SERVICE_UPCOMING = "movie/upcoming"
+    
+    
+    // MARK: - DETAIL
+    let SERVICE_MOVIE_DETAIL = "movie/"
     
     
 }
