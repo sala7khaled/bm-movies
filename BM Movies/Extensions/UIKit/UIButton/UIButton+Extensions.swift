@@ -18,10 +18,10 @@ extension UIButton {
         self.setTitle(key.l(), for: .normal)
     }
     
-    func applyShadow(radius: CGFloat = 10, color: UIColor = .appPrimary) {
+    func applyShadow(radius: CGFloat = 14, color: UIColor = .appPrimary) {
         layer.shadowColor = color.cgColor
         layer.shadowOffset = CGSize(width: 3.0, height: 5.0)
-        layer.shadowOpacity = 0.3
+        layer.shadowOpacity = 0.4
         layer.shadowRadius = radius
         layer.masksToBounds = false
     }

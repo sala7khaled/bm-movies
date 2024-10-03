@@ -10,6 +10,22 @@ import UIKit
 class MovieController: BaseController {
 
     // MARK: - Outlets
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var bannerImage: UIImageView!
+    @IBOutlet weak var posterImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var taglineLabel: UILabel!
+    @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var adultDot: UIView!
+    @IBOutlet weak var adultLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var websiteButton: AppButton!
+    @IBOutlet weak var storylineTitle: UILabel!
+    @IBOutlet weak var storylineLabel: UILabel!
+    @IBOutlet weak var votingTitle: UILabel!
+    @IBOutlet weak var votingLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
     
     
     // MARK: - Properties
@@ -29,10 +45,26 @@ class MovieController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+        setupNavigation()
         setupViewModel()
     }
     
     // MARK: - Methods
+    func setupUI() {
+        scrollView.isHidden = true
+        posterImage.layer.cornerRadius = 12
+        
+        // Localizations
+        websiteButton.setTitle("visit_website")
+        storylineTitle.text = "storyline".l()
+        votingTitle.text = "voting".l()
+    }
+    
+    func setupNavigation() {
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
     func setupViewModel() {
         viewModel.getMovieDetailAPI()
         
@@ -41,15 +73,62 @@ class MovieController: BaseController {
         viewModel.didFailedDetailClosure = { [weak self] errorMessage in
             guard let self else { return }
             self.loading?.close()
-            AlertController.shared.show(in: self, message: errorMessage)
+            showError(message: errorMessage)
         }
         
         viewModel.didSuccessDetailClosure = { [weak self] in
             guard let self else { return }
             self.loading?.close()
-//            self.movieTableView.reloadData()
+            self.setupMovieDetail()
         }
         
+    }
+    
+    func setupMovieDetail() {
+        guard let movie = viewModel.getMovieDetail() else {
+            AlertController.shared.show(in: self, message: "Movie details not found!" ) { action in
+                self.navigationController?.popViewController(animated: true)
+            }
+            return
+        }
+        
+        scrollView.isHidden = false
+        bannerImage.loadImage(path: movie.backdropPath)
+        posterImage.loadImage(path: movie.posterPath)
+        
+        titleLabel.text = movie.title
+        taglineLabel.text = movie.tagline
+        languageLabel.text = movie.originalLanguage?.capitalized
+        
+        adultLabel.isHidden = !(movie.adult ?? false)
+        adultDot.isHidden = !(movie.adult ?? false)
+        
+        statusLabel.text = movie.status
+        dateLabel.text = movie.releaseDate
+        
+        storylineLabel.text = movie.overview
+        
+        let average = String(format: "%.1f", movie.voteAverage ?? "0")
+        votingLabel.text = average
+        
+        if let count = movie.voteCount {
+            countLabel.text = "(\(count))"
+        }
+    }
+    
+    // MARK: - Actions
+    @IBAction func websiteButtonClicked(_ sender: Any) {
+        
+        guard let movie = viewModel.getMovieDetail(), let url = URL(string: movie.homepage ?? "") else {
+            showError(message: "link_error".l())
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            showError(message: "link_error".l())
+        }
     }
     
     

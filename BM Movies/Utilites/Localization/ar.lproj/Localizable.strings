@@ -9,7 +9,7 @@
 
 // MARK: - MAIN
 "app_name" = "BM أفلام";
-"ok" = "موافق";
+"alright" = "حسناً";
 "cancel" = "إلغاء";
 "continue" = "متابعة";
 "get_started" = "ابدأ";
@@ -21,8 +21,15 @@
 "no_response_found" = "لم يتم العثور على استجابة!";
 "parsing_error" = "خطأ في التحليل!";
 "session_expired" = "انتهت الجلسة!";
+"link_error" = "الرابط معطل أو غير صحيح!";
 
 // MARK: - HOME
 "nowPlaying" = "يعرض الآن";
 "popular" = "أفلام شائعة";
 "upcoming" = "أفلام قادمة";
+
+// MARK: - DETAIL
+"visit_website" = "زيارة الموقع";
+"storyline" = "القصة";
+"genres" = "الأنواع";
+"voting" = "التصويت";

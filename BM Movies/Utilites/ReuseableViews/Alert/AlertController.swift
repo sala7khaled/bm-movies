@@ -44,7 +44,7 @@ class AlertController: UIViewController {
         
         vc?.addActionSheetForIpad(actionSheet: alert)
         
-        alert.addAction(UIAlertAction(title: btnTitle ?? "ok".l(), style: .default, handler: handler))
+        alert.addAction(UIAlertAction(title: btnTitle ?? "alright".l(), style: .default, handler: handler))
         
         if (withCancel) {
             alert.addAction(UIAlertAction(title: "cancel".l(), style: .cancel))

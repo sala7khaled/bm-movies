@@ -9,7 +9,7 @@
 
 // MARK: - MAIN
 "app_name" = "BM Movies";
-"ok" = "Ok";
+"alright" = "Alright";
 "cancel" = "Cancel";
 "continue" = "Continue";
 "get_started" = "Get started";
@@ -22,9 +22,16 @@
 "no_response_found" = "No response found!";
 "parsing_error" = "Parsing error!";
 "session_expired" = "Session expired!";
+"link_error" = "Link broken or incorrect!";
 
 
 // MARK: - HOME
 "nowPlaying" = "Now Playing";
 "popular" = "Popular Movies";
 "upcoming" = "Upcoming Movies";
+
+// MARK: - DETAIL
+"visit_website" = "Visit Website";
+"storyline" = "Storyline";
+"genres" = "Genres";
+"voting" = "Voting";

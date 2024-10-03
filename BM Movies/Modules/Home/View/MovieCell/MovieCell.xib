@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l68-P2-YZT">
-                        <rect key="frame" x="160" y="9" width="310" height="163"/>
+                        <rect key="frame" x="160" y="22.666666666666671" width="310" height="135.66666666666663"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P34-3D-ooY">
                                 <rect key="frame" x="0.0" y="0.0" width="24" height="53.333333333333336"/>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zhm-pJ-eHy">
-                                        <rect key="frame" x="0.0" y="36.333333333333336" width="24" height="17"/>
+                                        <rect key="frame" x="0.0" y="36.333333333333329" width="24" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giC-FJ-31e">
                                                 <rect key="frame" x="0.0" y="0.0" width="4" height="17"/>
@@ -46,7 +46,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-a3-HjR" userLabel="Dot">
-                                                <rect key="frame" x="10" y="6.6666666666666643" width="4" height="4"/>
+                                                <rect key="frame" x="10" y="6.3333333333333286" width="4" height="4"/>
                                                 <color key="backgroundColor" name="appSubText"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fhh-a3-HjR" secondAttribute="height" id="T8t-GI-ptx"/>
@@ -69,10 +69,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8xp-NV-45R">
-                                <rect key="frame" x="0.0" y="145" width="38" height="18"/>
+                                <rect key="frame" x="0.0" y="117.66666666666667" width="38" height="18.000000000000014"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qY-yW-xWC">
-                                        <rect key="frame" x="0.0" y="0.33333333333334281" width="4" height="17"/>
+                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="4" height="17"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                         <color key="textColor" name="appMainText"/>
                                         <nil key="highlightedColor"/>
@@ -86,7 +86,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQn-xW-tQI">
-                                        <rect key="frame" x="34" y="0.33333333333334281" width="4" height="17"/>
+                                        <rect key="frame" x="34" y="0.66666666666665719" width="4" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="appSubText"/>
                                         <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWE-Sl-jeY">
                         <rect key="frame" x="11.999999999999996" y="12" width="40.666666666666657" height="25"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-pA-uW3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-pA-uW3">
                                 <rect key="frame" x="8.0000000000000018" y="4" width="24.666666666666671" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" name="appMainText"/>
@@ -120,7 +120,7 @@
                     <constraint firstItem="EWE-Sl-jeY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="FtI-7c-Z2V"/>
                     <constraint firstItem="l68-P2-YZT" firstAttribute="leading" secondItem="X1s-Mz-jSk" secondAttribute="trailing" constant="20" id="cft-bl-bBB"/>
                     <constraint firstItem="X1s-Mz-jSk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ebN-TG-zrj"/>
-                    <constraint firstItem="l68-P2-YZT" firstAttribute="height" secondItem="X1s-Mz-jSk" secondAttribute="height" multiplier="0.9" id="hKS-KU-UZ4"/>
+                    <constraint firstItem="l68-P2-YZT" firstAttribute="height" secondItem="X1s-Mz-jSk" secondAttribute="height" multiplier="0.75" id="hKS-KU-UZ4"/>
                     <constraint firstItem="l68-P2-YZT" firstAttribute="centerY" secondItem="X1s-Mz-jSk" secondAttribute="centerY" id="sew-7C-3pX"/>
                     <constraint firstAttribute="bottom" secondItem="X1s-Mz-jSk" secondAttribute="bottom" id="uaL-rm-BoY"/>
                     <constraint firstItem="X1s-Mz-jSk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="x7T-uB-hHv"/>
@@ -153,7 +153,7 @@
             <color red="0.49019607843137253" green="0.14117647058823529" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appSubText">
-            <color red="0.6119999885559082" green="0.6119999885559082" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="appYellow">
             <color red="0.90196078431372551" green="0.67843137254901964" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

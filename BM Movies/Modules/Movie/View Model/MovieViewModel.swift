@@ -11,6 +11,7 @@ class MovieViewModel {
     
     // MARK: - Properties
     private var movieId: Int
+    private var movieDetailModel: MovieDetailModel?
     
     
     // MARK: - Life Cycle
@@ -20,10 +21,14 @@ class MovieViewModel {
     
     // MARK: - Closures
     var didFailedDetailClosure: ((String) -> Void)?
-    var didSuccessDetailClosure: (() -> Void)?
+    var didSuccessDetailClosure: (() -> Void)?  
     
     
     // MARK: - Methods
+    func getMovieDetail() -> MovieDetailModel? {
+        return movieDetailModel
+    }
+    
     func getMovieDetailAPI() {
         
         DetailRepo.shared.getMovieDetail(movieId: movieId) { [weak self] response in
@@ -31,7 +36,7 @@ class MovieViewModel {
             DispatchQueue.main.async {
                 switch response {
                 case let .onSuccess(response):
-//                    self.moviesList = response.results ?? []
+                    self.movieDetailModel = response
                     self.didSuccessDetailClosure?()
                 case let .onFailure(error):
                     self.didFailedDetailClosure?(error.message ?? "no_response_found".l())

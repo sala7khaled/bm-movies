@@ -13,9 +13,11 @@ class LoadingButton: UIButton {
     var activityIndicator: UIActivityIndicatorView!
     
     func configure(radius: CGFloat = 12,
-                   textColor: UIColor = .appBlack,
-                   backColor: UIColor = .clear,
+                   textColor: UIColor = .appWhite,
+                   backColor: UIColor = .appPrimary,
                    borderColor: UIColor? = nil) {
+        
+        self.applyShadow()
         layer.cornerRadius = radius
         setTitleColor(textColor, for: .normal)
         backgroundColor = backColor

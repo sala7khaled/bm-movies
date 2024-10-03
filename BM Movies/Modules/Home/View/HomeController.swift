@@ -42,7 +42,7 @@ class HomeController: BaseController {
         viewModel.didFailedMoviesClosure = { [weak self] errorMessage in
             guard let self else { return }
             self.loading?.close()
-            AlertController.shared.show(in: self, message: errorMessage)
+            showError(message: errorMessage)
         }
         
         viewModel.didSuccessMoviesClosure = { [weak self] in

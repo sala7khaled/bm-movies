@@ -39,8 +39,7 @@ class MovieCell: UITableViewCell {
     
     func configure(with movie: MovieModel) {
         
-        posterImage.loadImage(url: movie.backdropPath)
-        
+        posterImage.loadImage(path: movie.posterPath)
         
         titleLabel.text = movie.originalTitle
         languageLabel.text = movie.originalLanguage?.capitalized
