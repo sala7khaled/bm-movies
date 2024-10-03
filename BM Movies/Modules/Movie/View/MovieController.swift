@@ -26,6 +26,8 @@ class MovieController: BaseController {
     @IBOutlet weak var votingTitle: UILabel!
     @IBOutlet weak var votingLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var genresLabel: UILabel!
+    @IBOutlet weak var genreCollectionView: UICollectionView!
     
     
     // MARK: - Properties
@@ -47,6 +49,7 @@ class MovieController: BaseController {
         
         setupUI()
         setupNavigation()
+        setupCollectionView()
         setupViewModel()
     }
     
@@ -59,6 +62,7 @@ class MovieController: BaseController {
         websiteButton.setTitle("visit_website")
         storylineTitle.text = "storyline".l()
         votingTitle.text = "voting".l()
+        genresLabel.text = "genres".l()
     }
     
     func setupNavigation() {
@@ -114,6 +118,9 @@ class MovieController: BaseController {
         if let count = movie.voteCount {
             countLabel.text = "(\(count))"
         }
+        
+        genreCollectionView.reloadData()
+        
     }
     
     // MARK: - Actions
