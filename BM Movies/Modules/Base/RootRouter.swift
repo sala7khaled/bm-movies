@@ -38,11 +38,11 @@ class RootRouter {
         window?.rootViewController = vc
     }
     
-    static func createNavController(vc: UIViewController, title: String, image: UIImage) -> UINavigationController {
+    static func createNavController(vc: UIViewController, title: String, image: String) -> UINavigationController {
         vc.navigationItem.title = title
         let nav = AppNavController(rootViewController: vc)
         nav.tabBarItem.title = title
-        nav.tabBarItem.image = image
+        nav.tabBarItem.image = UIImage(systemName: image)
         return nav
     }
     

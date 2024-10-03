@@ -22,5 +22,27 @@ class MovieRepo: Repo {
             }
         }
     }
+    
+    func getPopular(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
+        provider.request(type: APIData<[MovieModel]>.self, service: Api.MovieService.getPopular(language: language, page: page)) { response in
+            switch (response) {
+            case let .onSuccess(response):
+                completion(.onSuccess(response))
+            case let .onFailure(error):
+                completion(.onFailure(error))
+            }
+        }
+    }
+    
+    func getUpcoming(language: String, page: Int, _ completion: @escaping (APIResponse<APIData<[MovieModel]>>) -> ()) {
+        provider.request(type: APIData<[MovieModel]>.self, service: Api.MovieService.getUpcoming(language: language, page: page)) { response in
+            switch (response) {
+            case let .onSuccess(response):
+                completion(.onSuccess(response))
+            case let .onFailure(error):
+                completion(.onFailure(error))
+            }
+        }
+    }
 
 }

@@ -9,12 +9,20 @@ import UIKit
 
 class HomeViewModel {
     
+    // MARK: - Properties
+    private var homeType: HomeTabType
+    private var moviesList: [MovieModel] = []
+    
+    
+    // MARK: - Life Cycle
+    init(homeType: HomeTabType) {
+        self.homeType = homeType
+    }
+    
     // MARK: - Closures
     var didFailedMoviesClosure: ((String) -> Void)?
     var didSuccessMoviesClosure: (() -> Void)?
-    
-    // MARK: - Properties
-    private var moviesList: [MovieModel] = []
+    var startLoadingClosure: (() -> Void)?
     
     
     // MARK: - Methods
@@ -28,7 +36,9 @@ class HomeViewModel {
     
     // MARK: - API
     func getMoviesAPI() {
-        MovieRepo.shared.getNowPlaying(language: "en", page: 1) { [weak self] response in
+        startLoadingClosure?()
+        
+        let completionHandler: (APIResponse<APIData<[MovieModel]>>) -> Void = { [weak self] response in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 switch response {
@@ -40,7 +50,21 @@ class HomeViewModel {
                 }
             }
         }
+        
+        let langCode = AppLanguage.currentLanguage()
+        let page = 1
+        
+        
+        switch homeType {
+        case .nowPlaying:
+            MovieRepo.shared.getNowPlaying(language: langCode, page: page, completionHandler)
+        case .popular:
+            MovieRepo.shared.getPopular(language: langCode, page: page, completionHandler)
+        case .upcoming:
+            MovieRepo.shared.getUpcoming(language: langCode, page: page, completionHandler)
+        }
     }
+
     
 }
 

@@ -13,12 +13,11 @@ class HomeController: BaseController {
     @IBOutlet weak var movieTableView: UITableView!
     
     // MARK: - Properties
-    let viewModel = HomeViewModel()
-    var homeTab: HomeTab
+    let viewModel: HomeViewModel
     
     // MARK: - Init
-    init(homeTab: HomeTab) {
-        self.homeTab = homeTab
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -40,12 +39,19 @@ class HomeController: BaseController {
         
         viewModel.didFailedMoviesClosure = { [weak self] errorMessage in
             guard let self else { return }
+            self.loading?.close()
             AlertController.shared.show(in: self, message: errorMessage)
         }
         
         viewModel.didSuccessMoviesClosure = { [weak self] in
             guard let self else { return }
+            self.loading?.close()
             self.movieTableView.reloadData()
+        }
+        
+        viewModel.startLoadingClosure = { [weak self] in
+            guard let self else { return }
+            self.loading?.show()
         }
     }
     

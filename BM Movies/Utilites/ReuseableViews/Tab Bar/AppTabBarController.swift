@@ -9,43 +9,44 @@
 import UIKit
 
 // MARK: - HomeTab Tab
-enum HomeTab: Int, CaseIterable {
+enum HomeTabType: Int, CaseIterable {
     case nowPlaying = 0, popular, upcoming
     
     var title: String {
         return String(describing: self).l()
     }
     
-    var image: UIImage? {
+    var image: String {
         switch self {
         case .nowPlaying:
-            UIImage(systemName: "music.house")
+            "music.house"
         case .popular:
-            UIImage(systemName: "flame")
+            "flame"
         case .upcoming:
-            UIImage(systemName: "square.stack.3d.down.right")
+            "square.stack.3d.down.right"
         }
     }
     
-    var selectedImage: UIImage? {
+    var selectedImage: String {
         switch self {
         case .nowPlaying:
-            UIImage(systemName: "music.house.fill")
+            "music.house.fill"
         case .popular:
-            UIImage(systemName: "flame.fill")
+            "flame.fill"
         case .upcoming:
-            UIImage(systemName: "square.stack.3d.down.right.fill")
+            "square.stack.3d.down.right.fill"
         }
     }
     
     var viewController: UIViewController {
+        let homeViewModel = HomeViewModel(homeType: self)
         switch self {
         case .nowPlaying:
-            return HomeController(homeTab: self)
+            return HomeController(viewModel: homeViewModel)
         case .popular:
-            return HomeController(homeTab: self)
+            return HomeController(viewModel: homeViewModel)
         case .upcoming:
-            return HomeController(homeTab: self)
+            return HomeController(viewModel: homeViewModel)
         }
     }
 }
@@ -60,19 +61,19 @@ public class AppTabBarController: UITabBarController {
     let selectedColor: UIColor = .appBarSelect
     let unselectedColor: UIColor = .appSubText
     
-    let selectedFont: UIFont = .systemFont(ofSize: 14, weight: .medium)
+    let selectedFont: UIFont = .systemFont(ofSize: 14, weight: .bold)
     let unselectedFont: UIFont = .systemFont(ofSize: 12, weight: .regular)
     
     private var tabBarItems: [UIViewController] {
         var items: [UIViewController] = []
         
-        HomeTab.allCases.forEach { tab in
+        HomeTabType.allCases.forEach { tab in
             let tabBarItem =
             self.tabBarItem(for: RootRouter.createNavController(vc: tab.viewController,
                                                                 title: tab.title,
-                                                                image: tab.image!),
-                            image: tab.image!,
-                            selectedImage: tab.selectedImage!,
+                                                                image: tab.image),
+                            image: tab.image,
+                            selectedImage: tab.selectedImage,
                             title: tab.title,
                             tag: tab.rawValue)
             
@@ -129,17 +130,17 @@ public class AppTabBarController: UITabBarController {
     }
     
     private func tabBarItem(for controller: UIViewController,
-                            image: UIImage,
-                            selectedImage: UIImage,
+                            image: String,
+                            selectedImage: String,
                             title: String,
                             tag: Int) -> UIViewController {
         
-        let item = UITabBarItem(title: title, image: image, tag: tag)
+        let item = UITabBarItem(title: title, image: UIImage(systemName: image), tag: tag)
         
         item.imageInsets = UIEdgeInsets.zero
         item.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 4)
         
-        item.selectedImage = selectedImage
+        item.selectedImage = UIImage(systemName: selectedImage)
         
         controller.tabBarItem = item
         controller.hidesBottomBarWhenPushed = false
