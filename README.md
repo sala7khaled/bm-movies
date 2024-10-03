@@ -2,7 +2,7 @@
 
 # BM Movies
 
-BM Movies is a sleek and user-friendly app that lets you explore and discover the latest movies, including popular, now-playing, and upcoming films. With detailed movie information, ratings, and trailers, BM Movies makes it easy to stay updated on what's trending in the world of cinema. Perfect for movie enthusiasts seeking a streamlined movie discovery experience.
+BM Movies is a sleek and user-friendly app that lets you explore and discover the latest movies, including popular, now-playing, and upcoming films. With detailed movie information, storyline, ratings, and genres. BM Movies makes it easy to stay updated on what's trending in the world of cinema. Perfect for movie enthusiasts seeking a streamlined movie discovery experience.
 
 <br>
 <br>
