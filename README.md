@@ -52,7 +52,6 @@ git clone https://github.com/sala7khaled/bm-movies.git
 3. Once the project is opened in Xcode.
 4. Build and run the project using a simulator or a connected device.
 
-Important: Contact the project maintainer to request the `APIKeys.swift` file, which is required for the application to function properly.
 > [!WARNING]
 > Contact the project maintainer to request the `APIKeys.swift` file, which is required to run the app properly.
 
